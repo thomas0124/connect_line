@@ -10,9 +10,10 @@ from linebot.models import MessageEvent, TextMessage
 app = Flask(__name__)
 
 # 認証情報の取得
-CHANNEL_ACCESS_TOKEN = "4iPdAqAlNp7njs8MFPLo+XvZ0Q9XFPgQTxpg+ysFOstFyEKiuug6jYAsO0K4Q3sm1JaIAjpqTjJmtp5thfD7+0EYmuCvJ5UzDoVoWQhX74bKqRqs93eGxKrQYLrlZ3b5u40fkRdSGab1n8Ya3pJzWgdB04t89/1O/w1cDnyilFU="
-CHANNEL_SECRET = "f8af532e2795569593fda3333c8498d2"
-WEB_HOOK_LINKS = "7008101136020-7018743546545-tqHv1yiQJ43cq95kHkesBBuK"
+CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
+CHANNEL_SECRET = os.environ["LINE_CHANNEL_SECRET"]
+WEB_HOOK_LINKS = os.environ["SLACK_WEB_HOOKS_URL"]
+
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
 
