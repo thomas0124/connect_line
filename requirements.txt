@@ -1,4 +1,4 @@
 slackweb
 Flask
 line-bot-sdk
-gunicorn
+freeze
