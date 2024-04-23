@@ -12,7 +12,7 @@ app = Flask(__name__)
 # 認証情報の取得
 CHANNEL_ACCESS_TOKEN = "4iPdAqAlNp7njs8MFPLo+XvZ0Q9XFPgQTxpg+ysFOstFyEKiuug6jYAsO0K4Q3sm1JaIAjpqTjJmtp5thfD7+0EYmuCvJ5UzDoVoWQhX74bKqRqs93eGxKrQYLrlZ3b5u40fkRdSGab1n8Ya3pJzWgdB04t89/1O/w1cDnyilFU="
 CHANNEL_SECRET = "f8af532e2795569593fda3333c8498d2"
-WEB_HOOK_LINKS = "https://hooks.slack.com/services/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"
+WEB_HOOK_LINKS = "https://hooks.slack.com/services/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"
 
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
